@@ -1,0 +1,163 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+:root{
+    --background: linear-gradient(135deg, #00000073 0%, #00000070 0%);
+}
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
+}
+
+.sidenav {
+    height: 100%;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-image: var(--background), url('..//img/sena1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    animation: fadeIn;
+    animation-duration: 5s;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+    left: 0px;
+}
+
+
+.main {
+    padding: 0px 50px;
+    margin: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        position: relative;
+        left: 20px;
+        
+    }  
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        position: relative;
+        left: 40px;
+        
+    }  
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 50%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 1150px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 70%;
+    }
+}
+
+
+@media screen and (max-width: 368px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 70%;
+    }
+}
+
+.form-control{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.158);
+
+}
+
+
+.login-main-text{
+    margin-top: 30%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: rgb(255, 147, 7) !important;
+    color: #fff;
+    transition: 1s;
+}
+
+.btn-black:hover{
+    background-color: rgb(252, 177, 15) !important;
+    color: #fff;
+    transition: 1s;
+}
+
+.btn-secondary-cancelar{
+    background-color: rgb(255, 0, 55) !important;
+    color: #fff;
+    transition: 1s;
+}
+
+.btn-secondary-cancelar:hover{
+    background-color: rgb(255, 32, 107) !important;
+    color: #fff;
+    transition: 1s;
+}
+
+.btn-secondary-inicio{
+    background-color: rgb(255, 147, 7) !important;
+    color: #fff;
+    transition: 1s;
+}
+
+.btn-secondary-inicio:hover{
+    background-color: rgb(252, 177, 15) !important;
+    color: #fff;
+    transition: 1s;
+}
+
+

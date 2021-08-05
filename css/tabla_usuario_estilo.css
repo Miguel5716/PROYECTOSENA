@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root{
+    --background: linear-gradient(135deg, #0000008e 0%, #00000048 100%);
+    --color-primary: #0000007e;
+    --color-secondary: #ffffffb0;
+    --boton-padding: 20px 30px;
+
+    --color-1: rgb(255, 255, 255);
+    --color-2: rgb(60, 100, 129);
+    --color-3: #274557;
+
+    --dt-status-available-color: greenyellow;
+    --dt-status-away-color: greenyellow;
+    --dt-status-offline-color: greenyellow;
+
+    --dt-padding: 12px;
+    --dt-padding-s:6px;
+    --dt-padding-xs: 2px;
+
+    --dt-border-radius: 3px;
+
+    --dt-background-color-container: #274557;
+    --dt-border-color: var(--color-2);
+    --dt-bg-color: var(--color-3);
+    --dt-text-color: var(--color-1);
+    --dt-bg-active-button: var(--color-3);
+    --dt-text-color-button: var(--color-1);
+    --dt-text-color-active-button: var(--color-1);
+    --dt-hover-cell-color: var(--color-3);
+    --dt-even-row-color: var(--color-2);
+    --dt-focus-color: var(--color-3);
+    --dt-input-background-color: var(--color-2);
+    --dt-input-color: var(--color-1);
+}
+
+.material-icons{
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.473);
+    transition: 0.5s;
+}
+
+.material-icons:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.container_buscar{
+    padding: 5px;
+    position: relative;
+    bottom: 2px;
+}
+
+input[type = "text"] {
+    font-size: 15px;
+    height: 36px;
+}
+
+::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.507); }
+::-webkit-input-placeholder { padding: 5px; }
+
+input[type = "submit"] {
+    font-size: 15px;
+    background: var(--color-2);
+    color: #fff;
+}
+
+input:hover[type = "submit"] {
+    background: var(--color-secondary);
+}
+
+.datatable-container{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--dt-background-color-container);
+    color: var(--dt-text-color);
+    width: 82.9%;
+    margin-left: auto;
+    font-size: 12px;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+
+@media screen and (max-width: 1050px){
+    .datatable-container{
+        font-family: 'Noto Sans', sans-serif;
+        background-color: var(--dt-background-color-container);
+        color: var(--dt-text-color);
+        width: 82.9%;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .datatable-container{
+        font-family: 'Noto Sans', sans-serif;
+        background-color: var(--dt-background-color-container);
+        color: var(--dt-text-color);
+        width: 100%;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .datatable-container{
+        font-family: 'Noto Sans', sans-serif;
+        background-color: var(--dt-background-color-container);
+        color: var(--dt-text-color);
+        width: 100%;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .datatable-container{
+        font-family: 'Noto Sans', sans-serif;
+        background-color: var(--dt-background-color-container);
+        color: var(--dt-text-color);
+        width: 100%;
+        font-size: 8px;
+    }
+}
+
+.datatable-container .header-tools{
+    border-bottom: solid 1px var(--dt-border-color);
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: baseline;
+    position: relative;
+}
+
+.datatable-container .header-tools .search{
+    width: 20%;
+}
+
+.datatable-container .header-tools .search .search-input{
+    width: 100%;
+    background-color: var(--dt-input-background-color);
+    display: block;
+    box-sizing: border-box;
+    border-radius: var(--dt-border-radius);
+    border: solid 1px var(--dt-border-color);
+    color: var(--dt-input-color);
+}
+
+.buscar{
+    width: 20%;
+    background: rgb(92, 196, 8);
+    box-sizing: border-box;
+    border-radius: var(--dt-border-radius);
+    border: solid 1px var(--dt-border-color);
+    color: var(--dt-input-color);
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.datatable-container .header-tools .tools{
+    width: 70%;
+}
+
+.datatable-container .header-tools .tools ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: right;
+}
+
+.datatable-container .header-tools .tools ul li{
+    display: inline-block;
+    margin: 0 var(--dt-padding-xs);
+    align-items: baseline;
+}
+
+.datatable-container .footer-tools{
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: baseline;
+}
+
+.datatable-container .footer-tools .list-items{
+    width: 50%;
+}
+
+.datatable-container .footer-tools .pages{
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+}
+
+.datatable-container .footer-tools .pages ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.datatable-container .footer-tools .pages ul li{
+    display: inline-block;
+    margin: 0 var(--dt-padding-xs);
+}
+
+.datatable-container .footer-tools .pages ul li button,
+.datatable-container .header-tools .tools ul li button{
+    color: var(--dt-text-color-button);
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: var(--dt-border-radius);
+    background: transparent;
+    cursor: pointer;
+}
+
+.datatable-container .footer-tools .pages ul li button:hover,
+.datatable-container .header-tools .tools ul li button:hover{
+    background: var(--dt-bg-active-button);
+    color: var(--dt-text-color-active-button);
+}
+
+
+.datatable tbody tr td li a:hover,
+.datatable tbody tr td li a:hover{
+    background: var(--dt-bg-active-button);
+    color: var(--dt-text-color-active-button);
+}
+
+.datatable-container .footer-tools .pages ul li span.active{
+    background: var(--dt-bg-color);
+    border-radius: var(--dt-border-radius);
+}
+
+.datatable-container .footer-tools .pages ul li button,
+.datatable-container .footer-tools .pages ul li span,
+.datatable-container .footer-tools .tools ul li button{
+    padding: var(--dt-padding-s) var(--dt-padding);
+}
+
+.datatable-container .datatable{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatable-container .datatable,
+.datatable-container .datatable th,
+.datatable-container .datatable td{
+    padding: var(--dt-padding) var(--dt-padding);
+}
+
+.datatable-container .datatable th{
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 1px var(--dt-border-color);
+}
+
+.datatable-container .datatable td{
+    border-bottom: solid 1px var(--dt-border-color);
+}
+
+.datatable-container .datatable tbody tr:nth-child(even){
+    background-color: var(--dt-even-row-color);
+}
+
+.datatable-container .datatable tbody tr:hover{
+    background-color: var(--dt-hover-cell-color);
+}
+
+.datatable-container .datatable tbody tr .available::after,
+.datatable-container .datatable tbody tr .away::after,
+.datatable-container .datatable tbody tr .offlin::after{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+.sidenav {
+    height: 100%;
+    overflow-x: hidden;
+    background-image: var(--background), url('..//img/sena.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    animation: fadeIn;
+    animation-duration: 5s;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+    left: 0px;
+}
+
+
+.main {
+    padding: 0px 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        position: relative;
+        left: 60px;
+        
+    }  
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        position: relative;
+        left: 40px;
+        
+    }
+    .login-main-text img{
+        position: relative;
+        left: 300px;
+        bottom: 100px;
+    
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 50%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 1150px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 17%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 0%;
+    }
+
+    .login-main-text img{
+        margin-right: 500px;
+        bottom: 100px;
+    
+    }
+
+    
+}
+
+
+@media screen and (max-width: 368px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 70%;
+    }
+
+    
+}
+
+.form-control{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.158);
+
+}
+
+
+.login-main-text{
+    margin-top: 100%;
+    position: relative;
+    right: 45px;
+    color: #fff;
+}
+
+.login-main-text img{
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: rgb(122, 165, 4) !important;
+    color: #fff;
+    transition: 1s;
+}
+
+.btn-black:hover{
+    background-color: rgb(144, 233, 0) !important;
+    color: #fff;
+    transition: 1s;
+}
+
+.btn-secondary-usuarios{
+    background-color: rgb(73, 130, 238) !important;
+    color: #fff;
+    transition: 1s;
+}
+
+.btn-secondary-usuarios:hover{
+    background-color: rgb(138, 207, 253) !important;
+    color: #fff;
+    transition: 1s;
+}
+
+
+.btn-secondary-inicio{
+    background-color: rgb(218, 99, 2) !important;
+    color: #fff;
+    transition: 1s;
+}
+
+.btn-secondary-inicio:hover{
+    background-color: rgb(255, 174, 0) !important;
+    color: #fff;
+    transition: 1s;
+}

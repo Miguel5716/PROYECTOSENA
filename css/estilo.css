@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700';
+
+:root{
+    --background: linear-gradient(135deg, #ff7300 0%, #ffffff00 100%);
+    --color-primary: #0000007e;
+    --color-secondary: #764ba298;
+    --boton-padding: 20px 30px;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+footer h2{
+    background-color:#ff6819;
+    padding: 10px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight:500;
+}
+
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+
+.subtitle{
+    color: var(--color-primary);
+    font-size: 2.5em;
+    margin-bottom: 35px;
+}
+
+.subtitle--right{
+    color: var(--color-primary);
+    font-size: 2.5em;
+    margin-bottom: 35px;
+    text-align: right;
+}
+
+.hero{
+    height: 100vh;
+    background-image: var(--background), url('..//img/sena1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    position: relative;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+.hero .container{
+    padding: 5px;
+    font-size: 25px;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.nav--footer{
+    font-weight: 300;
+    justify-content: flex-start;
+}
+
+.nav__items{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: 500;
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, 0.247);
+    border-radius: 40px;
+    transition: 0.5s;
+}
+
+
+
+.nav__items:hover{
+    background-color: #ff7300b6;
+}
+
+.nav__items--cta{
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.247);
+    transition: 0.5s;
+    border-radius: 40px;
+
+}
+
+.nav__items--cta:hover{
+	background-color: #51ff008e;
+    transition: 0.5s;
+}
+
+
+.nav__items--cta--i{
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.247);
+    transition: 0.5s;
+    border-radius: 40px;
+
+}
+
+.nav__items--cta--i:hover{
+	background-color: #ffd00096;
+    transition: 0.5s;
+}
+
+.nav__items--footer{
+    padding: 10px;
+}
+
+.hero__container{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: #fff;
+}
+
+.hero__texts{
+    width: 80%;
+    margin-bottom: 200px;
+}
+
+
+.hero__subtitle{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 20px 0;
+    z-index: 100;
+}
+
+.hero__title{
+    font-size: 50px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+
+.hero__wave{
+    position: absolute;
+    top: 475px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 265px;
+}
+
+.presentation{
+    padding-top: 0;
+    text-align: center;
+}
+
+.presentation__picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.presentation__copy{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+.about__img{
+    text-align: center;
+    width: 80%;
+    animation: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+}
+
+.about__img--left{
+    text-align: center;
+    width: 80%;
+    animation: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; 
+}
+
+.about__picture{
+    max-width: 80%;
+    border-radius: 15px;
+}
+
+.about_paragraph{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+.about_paragraph_1{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+.projects{
+    background: #ffae00;
+}
+
+.projects__grid{
+    display: grid;
+    height: 450px;
+    grid-template-areas:
+    "img1 img1 img2 img4"
+    "img1 img1 img3 img4";
+    gap: 30px;
+}
+
+.projects__item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.projects__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.projects__item:nth-of-type(1){
+    grid-area: img1;
+    border-radius: 10px;
+}
+
+.projects__item:nth-of-type(2){
+    grid-area: img2;
+    border-radius: 10px;
+}
+
+.projects__item:nth-of-type(3){
+    grid-area: img3;
+    border-radius: 10px;
+}
+
+.projects__item:nth-of-type(4){
+    grid-area: img4;
+    border-radius: 10px;
+}
+
+.projects__hover{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.226);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(100%);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+}
+
+.projects__item:hover .projects__hover{
+    transform: translateY(0%);
+    border-radius: 10px;
+}
+
+.projects__icon{
+    font-size: 40px;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.projects__icon1:hover {filter: sepia(60%);}
+
+@media screen and (max-width: 360px){
+    .hero__wave{
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .hero__wave{
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .hero__wave{
+    position: absolute;
+    top: 400px;
+    bottom: 0;
+    left: 0;
+    }
+}
+
+@media screen and (min-width: 400px){
+    .hero__wave{
+    position: absolute;
+    top: 400px;
+    bottom: 0;
+    left: 0;
+    }
+}
+
+.header {
+    z-index: 100;
+    background: #ff7300fd;
+    color: white;
+  
+    /* hacer el menu fijo */
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* ocuapamos todo el ancho */
+    right: 0;
+  }
+
+  ul{
+      background: #ff7300;
+  }
+  
+  .header a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    /* lo alineamos al centro */
+    align-items: center;
+  
+    flex-wrap: wrap;
+  }
+  
+  /* logo */
+  .logo {
+    letter-spacing: 15px;
+    font-size: 1.3em;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  /* todos los "ul" que esten dentro de "navigation" */
+  .navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navigation ul li {
+    /* uno al lado del otro */
+    display: inline-block;
+  }
+  
+  /* los enlaces dentro del menu */
+  .navigation ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+  }
+  
+  .navigation ul li a:hover {
+    background: #ffc400;
+  }
+  
+  .main {
+    padding-top: 12rem;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    .navigation{
+        width: 100%;
+        text-align: right;
+    }
+    .navigation ul{
+        display: none;
+    }
+    .navigation ul.show{
+        display: block;
+    }
+      
+    .navigation ul li {
+        display: block;
+      }
+      
+      /* los enlaces dentro del menu */
+      .navigation ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.2s linear;
+        border-radius: 5px;
+      }
+      
+      .navigation ul li a:hover {
+        background: #cf5e00;
+      }
+}
+
+
+
+#header {
+    margin:left;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav
+{ 
+    width: 100%;
+   
+    z-index: 100;                
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    color:#fff;
+    font-size: 21px;
+    margin: 10px;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+

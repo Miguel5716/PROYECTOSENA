@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root{
+    --background: linear-gradient(135deg, #0000008e 0%, #00000048 100%);
+    --color-primary: #0000007e;
+    --color-secondary: #ffffff98;
+    --boton-padding: 20px 30px;
+
+    --color-1: #fff;
+    --color-2: rgb(60, 100, 129);
+    --color-3: #3282b8;
+
+    --dt-status-available-color: greenyellow;
+    --dt-status-away-color: greenyellow;
+    --dt-status-offline-color: greenyellow;
+
+    --dt-padding: 12px;
+    --dt-padding-s:6px;
+    --dt-padding-xs: 2px;
+
+    --dt-border-radius: 3px;
+
+    --dt-background-color-container: #274557;
+    --dt-border-color: var(--color-2);
+    --dt-bg-color: var(--color-3);
+    --dt-text-color: var(--color-1);
+    --dt-bg-active-button: var(--color-3);
+    --dt-text-color-button: var(--color-1);
+    --dt-text-color-active-button: var(--color-1);
+    --dt-hover-cell-color: var(--color-3);
+    --dt-even-row-color: var(--color-2);
+    --dt-focus-color: var(--color-3);
+    --dt-input-background-color: var(--color-2);
+    --dt-input-color: var(--color-1);
+}
+
+.material-icons{
+    font-size: 20px;
+}
+
+input[type = "text"] {
+    font-size: 15px;
+    height: 30px;
+}
+
+::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.507); }
+
+input[type = "submit"] {
+    font-size: 15px;
+    background: var(--color-2);
+    color: #fff;
+}
+
+input:hover[type = "submit"] {
+    background: var(--color-secondary);
+}
+
+
+
+.datatable-container{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--dt-background-color-container);
+    color: var(--dt-text-color);
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.datatable-container .header-tools{
+    border-bottom: solid 1px var(--dt-border-color);
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: baseline;
+    position: f;
+}
+
+.datatable-container .header-tools .search{
+    width: 37%;
+}
+
+.datatable-container .header-tools .search .search-input{
+    width: 100%;
+    background-color: var(--dt-input-background-color);
+    display: block;
+    box-sizing: border-box;
+    border-radius: var(--dt-border-radius);
+    border: solid 1px var(--dt-border-color);
+    color: var(--dt-input-color);
+}
+
+.buscar{
+    width: 20%;
+    background: rgb(92, 196, 8);
+    box-sizing: border-box;
+    border-radius: var(--dt-border-radius);
+    border: solid 1px var(--dt-border-color);
+    color: var(--dt-input-color);
+    margin-top: 5px;
+}
+
+.datatable-container .header-tools .tools{
+    width: 70%;
+}
+
+.datatable-container .header-tools .tools ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+
+.datatable-container .header-tools .tools ul li{
+    display: inline-block;
+    margin: 0 var(--dt-padding-xs);
+    align-items: baseline;
+}
+
+.datatable-container .footer-tools{
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: baseline;
+}
+
+.datatable-container .footer-tools .list-items{
+    width: 50%;
+}
+
+.datatable-container .footer-tools .pages{
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+}
+
+.datatable-container .footer-tools .pages ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+.datatable-container .footer-tools .pages ul li{
+    display: inline-block;
+    margin: 0 var(--dt-padding-xs);
+}
+
+.datatable-container .footer-tools .pages ul li button,
+.datatable-container .header-tools .tools ul li button{
+    color: var(--dt-text-color-button);
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: var(--dt-border-radius);
+    background: transparent;
+    cursor: pointer;
+}
+
+.datatable-container .footer-tools .pages ul li button:hover,
+.datatable-container .header-tools .tools ul li button:hover{
+    background: var(--dt-bg-active-button);
+    color: var(--dt-text-color-active-button);
+}
+
+
+.datatable tbody tr td li a:hover,
+.datatable tbody tr td li a:hover{
+    background: var(--dt-bg-active-button);
+    color: var(--dt-text-color-active-button);
+}
+
+.datatable-container .footer-tools .pages ul li span.active{
+    background: var(--dt-bg-color);
+    border-radius: var(--dt-border-radius);
+}
+
+.datatable-container .footer-tools .pages ul li button,
+.datatable-container .footer-tools .pages ul li span,
+.datatable-container .footer-tools .tools ul li button{
+    padding: var(--dt-padding-s) var(--dt-padding);
+}
+
+.datatable-container .datatable{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatable-container .datatable,
+.datatable-container .datatable th,
+.datatable-container .datatable td{
+    padding: var(--dt-padding) var(--dt-padding);
+}
+
+.datatable-container .datatable th{
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 1px var(--dt-border-color);
+}
+
+.datatable-container .datatable td{
+    border-bottom: solid 1px var(--dt-border-color);
+}
+
+.datatable-container .datatable tbody tr:nth-child(even){
+    background-color: var(--dt-even-row-color);
+}
+
+.datatable-container .datatable tbody tr:hover{
+    background-color: var(--dt-hover-cell-color);
+}
+
+.datatable-container .datatable tbody tr .available::after,
+.datatable-container .datatable tbody tr .away::after,
+.datatable-container .datatable tbody tr .offlin::after{
+    display: inline-block;
+    vertical-align: middle;
+}
