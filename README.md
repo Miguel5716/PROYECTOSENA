@@ -1,8 +1,8 @@
 # **ACCESS**
 
-**Proyecto desarrollado por aprendices SENA. Trata de una sistema para el ingreso de personal al centro de industria y la construccion **
+Proyecto desarrollado por aprendices SENA. Trata de una sistema para el ingreso de personal al centro de industria y la construccion 
 
-*Se desarrolla principalmente con lenguaje PHP. *
+Se desarrolla principalmente con lenguaje PHP. 
 
 ### **COLABORADORES**
 ##### 1. Miguel Angel Aguiar Marin
