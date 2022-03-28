@@ -1,8 +1,8 @@
 # **ACCESS**
 
-Proyecto desarrollado por aprendices SENA. Trata de una sistema para el ingreso de personal al centro de industria y la construccion 
+Proyecto desarrollado por aprendices SENA. Sistema para el ingreso, registro, control del personal al centro de industria y la construccion regional Tolima 
 
-Se desarrolla principalmente con lenguaje PHP. 
+
 
 ### **COLABORADORES**
 ##### 1. Miguel Angel Aguiar Marin
